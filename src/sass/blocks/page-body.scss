@@ -1,0 +1,77 @@
+.page-body {
+  min-width: $mobile-width;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  line-height: 25px;
+  font-family: $font;
+  overflow-y: scroll;
+  letter-spacing: -0.5px;
+  // background: #FBFAFB;
+  min-height: 100vh;
+  padding-bottom: 161px;
+
+  &--no-padding {
+    padding-bottom: 0;
+    overflow-y: auto;
+  }
+}
+
+@media (max-width: 767px){
+  .page-body--no-padding {
+    padding-bottom: 80px;
+    overflow-y: auto;
+  }
+}
+
+@include mobile {
+  .page-body {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+
+ul li.active a {
+  font-weight: 500;
+  color: black;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #4F871C;
+    left: 0;
+    bottom: -2px;
+  }
+}
+* {
+  outline: none;
+}
+
+.pin {
+  position: relative;
+  color: red;
+  display: inline;
+  font-weight: normal;
+  white-space: nowrap;
+
+  &::before {
+    content: "";
+    position: absolute;
+    // white-space: nowrap;
+    width: 32px;
+    display: block;
+    height: 32px;
+    bottom: 5px;
+    left: 0;
+    transform: translateX(-50%);
+    background: url('../img/pin.svg') no-repeat 0 0;
+    cursor: pointer;
+  }
+}
+
+

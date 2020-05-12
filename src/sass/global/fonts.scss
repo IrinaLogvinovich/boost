@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src:
+    local("Manrope Thin"),
+    local("Manrope-Thin"),
+    url("../font/Manrope-Thin.woff2") format("woff2"),
+    url("../font/Manrope-Thin.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src:
+    local("Manrope Light"),
+    local("Manrope-Light"),
+    url("../font/Manrope-Light.woff2") format("woff2"),
+    url("../font/Manrope-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    local("Manrope Regular"),
+    local("Manrope-Regular"),
+    url("../font/Manrope-Regular.woff2") format("woff2"),
+    url("../font/Manrope-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src:
+    local("Manrope Medium"),
+    local("Manrope-Medium"),
+    url("../font/Manrope-Medium.woff2") format("woff2"),
+    url("../font/Manrope-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src:
+    local("Manrope Semibold"),
+    local("Manrope-Semibold"),
+    url("../font/Manrope-Semibold.woff2") format("woff2"),
+    url("../font/Manrope-Semibold.woff") format("woff");
+}
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src:
+    local("Manrope Bold"),
+    local("Manrope-Bold"),
+    url("../font/Manrope-Bold.woff2") format("woff2"),
+    url("../font/Manrope-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src:
+    local("Manrope Extrabold"),
+    local("Manrope-Extrabold"),
+    url("../font/Manrope-Extrabold.woff2") format("woff2"),
+    url("../font/Manrope-Extrabold.woff") format("woff");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../font/Montserrat-ExtraBold.woff2") format("woff2"), url("../font/Montserrat-ExtraBold.woff") format("woff");
+}
