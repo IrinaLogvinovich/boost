@@ -12,6 +12,36 @@
     url('../img/form/form-right.png') no-repeat 100% 180px;
     background-color: white;
 
+    & div {
+        position: relative;
+        & p {
+        display: none;
+            position: absolute;
+            z-index: 1;
+            top: -60px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.16);
+            width: auto;
+            background: white;
+            right: 5px;
+            color: #363636;
+            font-size: 14px;
+            font-weight: 400;
+            padding: 11px 15px;
+            border-radius: 20px;
+
+            &::after{
+                content: "";
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                background: white;
+                bottom: -2px;
+                left: 50%;
+                transform: rotate(-45deg) translateX(-50%);
+            }
+        }
+    }
+
     & h1 {
         text-align: center;
         margin-top: 0;
@@ -65,15 +95,79 @@
         }
     }
 
+    &__login.error {
+        & input {
+            color: red;
+        }
+
+        & p {
+            display: block;
+        }
+    }
+
+    &__email.error {
+        & input {
+            color: red;
+        }
+
+        & p {
+            display: block;
+        }
+    }
+
+    &__password.error {
+        & input {
+            color: red;
+        }
+
+        & p {
+            display: block;
+        }
+    }
+
+    &__password-repeat.error {
+        & input {
+            color: red;
+        }
+
+        & p {
+            display: block;
+        }
+    }
+
     & p {
         text-align: center;
         font-size: 18px;
         font-weight: 400;
-        margin-top: 25px;
+        margin-top: 28px;
 
         & a {
             font-weight: 700;
             color: #363636;
+            text-decoration: none;
+        }
+    }
+
+    &__alternative {
+        display: flex;
+        max-width: 480px;
+        margin : 38px auto 0 auto;
+        justify-content: space-between;
+        & a {
+            width: 48%;
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid #cecece;
+            border-radius: 30px;
+            height: 49px;
+            align-items: center;
+            padding-left: 11px;
+            padding-right: 17px;
+            color: #363636;
+            font-family: $font;
+            font-size: 16px;
+            font-weight: 400;
+            text-decoration: none;
         }
     }
 }
@@ -100,6 +194,18 @@
 
             & a {
                 text-decoration: none;
+            }
+        }
+
+        &__alternative {
+            flex-direction: column-reverse;
+            width: 227px;
+            margin-top: 20px;
+            margin-bottom: 0;
+
+            & a {
+                width: 100%;
+                margin-bottom: 10px;
             }
         }
     }

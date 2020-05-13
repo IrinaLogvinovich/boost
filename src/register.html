@@ -95,19 +95,24 @@
           <div class="decor-block__form form">
               <h1>הרשמה</h1>
               <form  action="#" method="post">
-                  <div>
+                <!-- добавляем в диву класс error -->
+                  <div class="form__login error">
+                    <p>שם משתמש לא קיים</p>
                     <label class="visually-hidden" for="login">שם משתמש</label>
                     <input id="login" login="name" type="text" placeholder="שם משתמש" required>
                   </div>
-                  <div>
+                  <div class="form__email">
+                    <p>הסיסמה צריכה לכלול לפחות 8 תווים</p>
                     <label class="visually-hidden" for="email">כתובת מייל</label>
                     <input id="email" name="email" type="email" placeholder="כתובת מייל" required>
                   </div>
-                  <div>
+                  <div class="form__password">
+                    <p>שם משתמש לא קיים</p>
                     <label class="visually-hidden" for="password">סיסמה</label>
                     <input id="password" name="password" type="password" placeholder="סיסמה" required>
                   </div>
-                  <div>
+                  <div class="form__password-repeat">
+                    <p>שם משתמש לא קיים</p>
                     <label class="visually-hidden" for="password-repeat">אימות סיסמה</label>
                     <input id="password-repeat" name="password-repeat" type="password" placeholder="אימות סיסמה" required>
                   </div>

@@ -13,5 +13,10 @@ $(function(){
             $('.header nav, .header__overlay').css('display', 'none');
         }
     })
+
+    $('.js-up').on('click', function(evt){
+        evt.preventDefault();
+        $('html, body').animate({scrollTop: 0}, 400)
+    })
 })
 

@@ -10,7 +10,82 @@
 
 <body class="page-body">
   <header class="header">
-   
+    <div class="header__overlay"></div>
+    <button class="header__burger">
+      <img src="img/burger.svg" alt="burger menu">
+    </button>
+      <nav>
+        <a class="header__auth" href="#">
+            <img src="img/menu/menu-user.svg" alt="icon">
+            <span>התחבר</span>
+        </a>
+        <a class="header__cart" href="#">
+             <img src="img/menu/menu-cart.svg" alt="icon">
+             <span>העגלה שלי</span>
+        </a>
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="img/menu/menu-1.svg" alt="icon">
+                    <span>יצירת קשר</span>
+                </a>
+            </li>
+            <li>
+             <a href="#">
+                 <img src="img/menu/menu-2.svg" alt="icon">
+                 <span>בלוג</span>
+             </a>
+         </li>
+         <li>
+             <a href="#">
+                 <img src="img/menu/menu-3.svg" alt="icon">
+                 <span>שירותים נוספים</span>
+             </a>
+         </li>
+         <li>
+             <a href="#">
+                 <img src="img/menu/menu-4.svg" alt="icon">
+                 <span>קידום בטוויטר</span>
+             </a>
+         </li>
+         <li>
+             <a href="#">
+                 <img src="img/menu/menu-5.svg" alt="icon">
+                 <span>קידום בטיק-טוק</span>
+             </a>
+         </li>
+         <li>
+             <a href="#">
+                 <img src="img/menu/menu-6.svg" alt="icon">
+                 <span>קידום בטיק-טוק</span>
+             </a>
+         </li>
+         <li>
+             <a href="#">
+                 <img src="img/menu/menu-7.svg" alt="icon">
+                 <span>קידום ביוטיוב</span>
+             </a>
+         </li>
+         <li>
+             <a href="#">
+                 <img src="img/menu/menu-8.svg" alt="icon">
+                 <span>קידום בפייסבוק</span>
+             </a>
+         </li>
+         <li>
+             <a href="#">
+                 <img src="img/menu/menu-9.svg" alt="icon">
+                 <span>קידום באינסטגרם</span>
+             </a>
+         </li>
+        </ul>
+ 
+    </nav>
+    <!-- </div> -->
+  
+   <a  class="header__logo" href="/">
+    <img src="img/menu/menu-logo.svg" alt="logo">
+    </a>
   </header>
   <main>
    <section class="services">
@@ -156,32 +231,36 @@
    </section>
   </main>
   <footer class="footer">
+    <a href="#" class="footer__up js-up">
+      <img src="img/arrow.svg" alt="arrow up">
+    </a>
     <div class="footer__logo">
       <span></span>
       <a href="#"> 
         <img src="img/footer-logo.svg" alt="logo"> 
+        <img class="footer__logo-mobile" src="img/footer-logo-mobile.svg" alt="logo">
       </a>
       <span></span>
     </div>
     <div class="wrapper">
       <div class="footer__icons">
         <ul class="footer__pay-list">
-          <li>
+          <li class="footer__pay-item footer__pay-item--master">
             <picture>
               <img src="img/mastercard.png" srcset ="img/mastercard@2x.png 2x" alt="mastercard logo" width="118" height ="70">
             </picture>
           </li>
-          <li>
+          <li class="footer__pay-item footer__pay-item--paypal">
             <picture>
               <img src="img/paypal.png" srcset ="img/paypal@2x.png 2x" alt="paypal logo" width="129" height ="33">
             </picture>
           </li>
-          <li>
+          <li class="footer__pay-item footer__pay-item--logo">
             <picture>
               <img src="img/logo.png" srcset ="img/logo@2x.png 2x" alt="logo" width="166" height ="54">
             </picture>
           </li>
-          <li>
+          <li class="footer__pay-item footer__pay-item--visa">
             <picture>
               <img src="img/visa.png" srcset ="img/visa@2x.png 2x" alt="visa logo" width="114" height="37">
             </picture>
@@ -291,7 +370,9 @@
         </div>
       </div>
     </div>
-    <img class="footer__bottom" src="img/footer-bottom.jpg" srcset="img/footer-bottom@2x.jpg" alt="footer" width="1920" height="52">
+    <div class="footer__bottom" >
+      <img src="img/footer-bottom.jpg" srcset="img/footer-bottom@2x.jpg" alt="footer" width="1920" height="52">
+    </div>
   </footer>
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
