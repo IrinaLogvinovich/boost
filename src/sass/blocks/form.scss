@@ -1,0 +1,106 @@
+.form {
+    width: 100%;
+    max-width: 1019px;
+    margin: 0 auto;
+    border-radius: 48px;
+    position: relative;
+    z-index: 1;
+    background: white;
+    padding: 100px 25px 44px 25px;
+    box-shadow: 0 -24px 24px rgba(0, 0, 0, 0.08);
+    background: url('../img/form/form-left.png') no-repeat 0 150px,
+    url('../img/form/form-right.png') no-repeat 100% 180px;
+    background-color: white;
+
+    & h1 {
+        text-align: center;
+        margin-top: 0;
+        position: relative;
+        margin-bottom: 90px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 220px;
+            height: 3px;
+            background-image: linear-gradient(270deg, #782ea0 0%, #279ced 100%);
+            bottom: -19px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    & form {
+        width: 100%;
+        max-width: 394px;
+        margin: 0 auto;
+        text-align: center;
+
+        & input {
+            width: 100%;
+            border: 1px solid white;
+            height: 64px;
+            background-color: #f1f1f1;
+            margin-bottom: 19px;
+            font-family: $font;
+            text-align: right;
+            padding: 0 13px;
+            color: #363636;
+            font-size: 22px;
+            font-weight: 400;
+
+            &:active {
+                outline: 1px solid $blue;
+            }
+
+            &:focus {
+                outline: 1px solid $blue;
+            }
+        }
+
+        & button {
+            margin-top: 17px;
+            cursor: pointer;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    & p {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        margin-top: 25px;
+
+        & a {
+            font-weight: 700;
+            color: #363636;
+        }
+    }
+}
+
+@include mobile {
+    .form {
+        padding-top: 51px;
+        background: white;
+        padding-bottom: 0px;
+        & h1 {
+            font-size: 24px;
+            margin-bottom: 80px;
+        }
+
+        & form {
+            & button {
+                margin-top: 8px;
+            }
+        }
+
+        & p {
+            margin-top: 47px;
+            margin-bottom: 0;
+
+            & a {
+                text-decoration: none;
+            }
+        }
+    }
+}

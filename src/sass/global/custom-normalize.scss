@@ -20,6 +20,9 @@ body {
   }
 }
 
+.overflow {
+  overflow: hidden;
+}
 // IE fix
 main {
   display: block;

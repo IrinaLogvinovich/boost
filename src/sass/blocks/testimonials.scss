@@ -1,0 +1,39 @@
+.testimonials {
+    // background: url('../img/instagram-middle.png') no-repeat -125px 0;
+    // // background-size: contain;
+    // min-height: 1045px;
+    // padding-top: 350px;
+    // color: white;
+
+    & h2 {
+        font-size: 42px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 20px;
+
+    }
+
+    & .wrapper {
+        max-width: 1694px;
+        padding: 0 27px;
+        margin: 0 auto;
+    }
+
+    &__header-block {
+        & ul {
+            list-style: none;
+            margin: 0 auto;
+            padding: 0 10px;
+            display: flex;
+            max-width: 212px;
+        }
+
+        & li {
+            margin-right: 10px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}

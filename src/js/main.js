@@ -3,3 +3,4 @@
  * //= modules/file.js
  */
 
+//= modules/menu.js

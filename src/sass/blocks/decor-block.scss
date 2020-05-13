@@ -1,0 +1,31 @@
+.decor-block {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 153px 17px 0 17px;
+
+    &__background {
+        max-width: 1844px;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: -34%;
+        right: -1px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .decor-block__background {
+        top: -30px;
+    }
+}
+
+@include mobile {
+    .decor-block {
+        padding-top: 90px;
+    }
+    .decor-block__background {
+        top: -30px;
+        width: calc(100% + 30px);
+    }
+}

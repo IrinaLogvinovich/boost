@@ -1,0 +1,22 @@
+.info {
+    padding-bottom: 65px;
+    padding-top: 45px;
+    & .wrapper {
+        max-width: 1474px;
+        padding: 0 27px;
+        margin: 0 auto;
+    }
+
+    & h2 {
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+
+    & p {
+        margin-top: 0;
+        font-size: 24px;
+        font-weight: 400;
+        margin-bottom: 32px;
+    }
+}

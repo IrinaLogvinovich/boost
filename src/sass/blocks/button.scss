@@ -1,0 +1,19 @@
+.button {
+    width: 128px;
+    height: 51px;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    // display: inline-block;
+    border-radius: 30px;
+
+    &--blue {
+        background: $blue-button;
+    }
+}
