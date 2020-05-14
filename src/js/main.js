@@ -4,3 +4,4 @@
  */
 
 //= modules/menu.js
+//= modules/blog.js

@@ -1,0 +1,107 @@
+.blog-card {
+    width: 100%;
+    padding: 7px;
+    background: white;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.08);
+    border-radius: 48px;    
+    display: flex;    
+    text-align: right;
+    
+    & div:first-child {
+        padding: 28px 42px 20px 42px;
+    }
+
+    & div:last-child {
+        & img {
+            border-top-right-radius: 48px;
+            border-bottom-right-radius: 48px;
+        }
+    }
+
+    & h2 {
+        margin-top: 0;
+        font-size: 26px;
+        margin-bottom: 22px;
+    }
+
+    & p {
+        font-size: 18px;
+        margin-top: 0;
+        margin-bottom: 27px;
+    }
+
+    & a {
+        width: 177px;
+        height: 51px;
+        margin: 0 auto;
+            & img {
+                margin-right: 7px;
+                margin-top: 2px;
+            }
+    }
+}
+
+@media(max-width: 1350px) {
+    .blog-card {
+        & div:first-child {
+            padding: 13px 20px 13px 13px;
+        }
+    }
+}
+
+@include mobile {
+    .blog-card {
+        padding: 3px;
+        & div:last-child {
+            width: 43%;
+            flex-shrink: 0;
+
+
+            & img {
+                min-width: 143px;
+                width: 100%;
+                height: auto;
+                max-width: 278px;
+                min-height: 246px;
+            }
+        }
+
+        & div:first-child {
+            width: 57%;
+            padding-left: 15px;
+            padding-bottom: 5px;
+        }
+
+        & h2 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        & p {
+            font-size: 16px;
+        }
+
+        & a {
+            font-size: 16px;
+            width: 135px;
+            height: 34px;
+            margin-right: 0;
+
+            & img {
+                width: 5px;
+                height: auto;
+            }
+        }
+    }
+}
+
+@media(max-width: 374px) {
+    .blog-card {
+        & div:last-child {
+            & img {
+                min-width: 80px;
+                min-height: 200px;
+            }
+        }
+    }
+}
