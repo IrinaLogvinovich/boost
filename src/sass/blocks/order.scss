@@ -1,0 +1,194 @@
+.order {
+    width: 100%;
+    max-width: 1019px;
+    margin: 0 auto;
+    border-radius: 48px;
+    position: relative;
+    z-index: 1;
+    background: white;
+    padding: 60px 25px 44px 25px;
+    box-shadow: 0 -24px 24px rgba(0, 0, 0, 0.08);
+    background-color: white;
+    margin-bottom: 140px;
+
+    &__steps {
+        max-width: 327px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        margin-bottom: 66px;
+    }
+
+    & h1 {
+        text-align: center;
+        font-size: 26px;
+        margin: 0;
+        margin-top: -60px;
+        margin-bottom: 35px;
+    }
+
+    &__header-block {
+        & p {
+            font-size: 26px;
+            font-weight: 700;
+            text-align: left;
+            padding: 0 110px;
+        }
+    }
+
+    &__step {
+        width: 48px;
+        height: 48px;
+        text-align: center;
+        background: $grey;
+        font-size: 22px;
+        line-height: 48px;
+        font-weight: 700;
+        border-radius: 50%;
+
+        &--active {
+            color: rgba( 255, 255, 255, 0.2);
+            font-size: 48px;
+            background: url('../img/plane.svg') no-repeat center center;
+            background-color: $blue;
+        }
+    }
+
+    &__line {
+        flex-grow: 1;
+        height: 3px;
+        background: $grey;
+    }
+
+    &__list {
+        width: 100%;
+        text-align: center;
+        border-left: 1px solid #c2c2c2;
+        border-right: 1px solid #c2c2c2;
+        border-top: 1px solid #c2c2c2;
+        border-collapse: collapse;
+
+        & th {
+            width: 25%;
+            font-size: 22px;
+            height: 45px;
+            border-bottom: 1px solid #c2c2c2;
+        }
+
+        & td {
+            width: 25%;
+            font-size: 18px;
+            vertical-align: middle;
+            height: 48px;
+            line-height: 48px;
+            border-bottom: 1px solid #c2c2c2;
+
+            & img {
+                margin: 0 15px;
+                transform: translateY(8px);
+            }
+
+            &:last-child {
+                text-align: right;
+            }
+        }
+    }
+
+
+    &__button {
+        margin: 0 auto;
+        width: 167px;
+       height: 51px;
+
+        & img {
+            margin-top: 2px;
+            margin-right: 10px;
+        }
+    }
+
+    &__total {
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 37px;
+        margin-bottom: 19px;
+
+        & span {
+            font-weight: 700;
+            font-size: 32px;
+            margin-right: 10px;
+        }
+    }
+}
+
+@media(max-width: 1024px) {
+    .order {
+        &__wrapper-inner {
+            width: 940px;
+        }
+
+        &__wrapper-out {
+            width: 100%;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            -ms-overflow-style: none;
+            overflow: -moz-scrollbars-none; 
+            &::-webkit-scrollbar { 
+                width: 0; 
+            }
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .order {
+        padding-top: 42px;
+        margin-bottom: 0;
+        padding-bottom: 30px;
+
+        &__steps {
+            padding: 0 17px;
+            margin-bottom: 23px;
+        }
+        & h1 {
+            font-size: 24px;
+            margin-top: 0;
+            margin-bottom: 26px;
+        }
+
+        &__header-block {
+            & p {
+                display: none;
+            }
+        }
+
+        &__wrapper-inner {
+            width: 700px;
+        }
+        
+        &__list {
+            & th {
+                font-size: 18px;
+                height: 37px;
+            }
+
+            & td {
+                font-size: 14px;
+                height: 41px;
+                line-height: 41px;
+
+                & img {
+                    transform: scale(0.8) translateY(0);
+                    margin: 0 5px;
+                    line-height: 0;
+                    vertical-align: middle;
+                }
+            }
+        }
+
+        &__total {
+            margin-top: 30px;
+        }
+    }
+}
