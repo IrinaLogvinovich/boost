@@ -18,5 +18,10 @@ $(function(){
         evt.preventDefault();
         $('html, body').animate({scrollTop: 0}, 400)
     })
+
+    // $('.js-down').on('click', function(evt){
+    //     evt.preventDefault();
+    //     $('html, body').animate({scrollTop: 0}, 400)
+    // })
 })
 

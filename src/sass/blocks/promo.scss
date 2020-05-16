@@ -1,0 +1,126 @@
+.promo {
+    width: 100%;
+    background: white;
+    overflow: hidden;
+    position: relative;
+
+    &__background {
+        position: relative;
+        margin-top: -155px;
+        left: -5px;
+        width: calc(100% + 10px);
+        height: auto;
+    }
+
+    & div {
+        text-align: center;
+        position: absolute;
+        top: 10.42vw;
+        width: 100%;
+        color: white;
+
+        & img {
+            margin-bottom: 1.82vw;
+        }
+
+        & h1 {
+            margin-top: 0;
+            font-size: 3.13vw;
+            margin-bottom: 5px;
+        }
+
+        & p {
+            margin-top: 0;
+            font-size: 1.67vw;
+        }
+        
+    }
+
+    &__button {
+        position: absolute;
+        transform: rotate(-180deg) translateX(50%);
+        bottom: 85px;
+        left: 50%;
+
+    }
+}
+
+@media(max-width: 1400px) {
+    .promo__background {
+        top: 50px;
+    }
+
+    .promo__button {
+        bottom: 0px;
+    }
+}
+
+@media(max-width: 1150px) {
+    .promo {
+        min-height: 600px;
+    }
+    .promo__background {
+        top: 100px;
+    }
+
+    .promo__button {
+        bottom: 0px;
+    }
+}
+
+@media(max-width: 1024px) {
+    .promo {
+        min-height: 500px;
+    }
+    .promo__button {
+        bottom: 0px;
+    }
+}
+
+@media(max-width: 900px) {
+    .promo {
+        min-height: 430px;
+    }
+
+}
+
+@media(max-width: 768px) {
+    .promo {
+        min-height: 380px;
+    }
+}
+
+@include mobile {
+    .promo {
+        min-height: 470px;
+
+        &__background {
+            width: 930px;
+            left: 50%;
+            top: 120px;
+            transform: translateX(-50%);
+        }
+
+        &__button {
+            bottom: 0px;
+        }
+
+        & div {
+           top: 120px;
+
+            & img {
+                width: 190px;
+                height: auto;
+                margin-bottom: 12px;
+            }
+
+            & h1 {
+                font-size: 32px;
+            }
+
+            & p {
+                font-size: 16px;
+            }
+        }
+    }
+}

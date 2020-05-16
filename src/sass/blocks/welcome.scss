@@ -1,0 +1,116 @@
+.welcome {
+    text-align: right;
+    padding-top: 46px;
+    padding-bottom: 150px;
+    background: url('../img/main/back-1.svg') no-repeat 90px 180px,
+    url('../img/main/back-2.svg') no-repeat 30px 100%,
+    url('../img/main/back-3.svg') no-repeat 130% 300px;
+
+    &__wrapper {
+        padding: 0 14.427vw ;
+        display: flex;
+        flex-direction: column;
+    }
+
+    & h2 {
+        font-size: 52px;
+        margin-bottom: 20px;
+    }
+
+    & span {
+        font-size: 32px;
+        margin-bottom: 118px;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -58px;
+            right: 0;
+            width: 220px;
+            height: 3px;
+            background-image: linear-gradient(270deg, #782ea0 0%, #279ced 100%);
+        }
+    }
+
+    & p {
+        margin-top: 0;
+        font-size: 28px;
+        max-width: 1056px;
+        margin-left: auto;
+        margin-bottom: 32px;
+    }
+}
+
+@media(max-width: 1400px) {
+    .welcome__wrapper {
+        padding: 0 30px;
+    }
+}
+
+@media(max-width: 1150px) {
+    .welcome {
+        padding-bottom: 280px;
+        background: url('../img/main/back-1.svg') no-repeat 80% 95%,
+        url('../img/main/back-2.svg') no-repeat 30px 100%;
+
+        & h2 {
+            font-size: 35px;
+        }
+
+        & span {
+            font-size: 26px;
+            margin-bottom: 100px;
+
+            &::after {
+                bottom: -40px;
+            }
+        }
+
+        & p {
+            font-size: 22px;
+        }
+    }
+}
+
+@media(max-width: 1024px) {
+    .welcome {
+        padding-bottom: 400px;
+        background: url('../img/main/back-1.svg') no-repeat 80% 75%,
+        url('../img/main/back-2.svg') no-repeat 30px 85%;
+    }
+}
+
+@include mobile {
+    .welcome {
+        padding-top: 3px;
+        padding-bottom: 210px;
+        text-align: center;
+        background: url('../img/main/welcome-mobile.svg') no-repeat -100px 100%;
+
+        &__wrapper {
+            padding: 0 20px 0 25px;
+        }
+
+        & h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        & span {
+            font-size: 20px;
+            margin-bottom: 50px;
+
+            &::after {
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: -23px;
+                width: 140px;
+            }
+        }
+
+        & p {
+            font-size: 17px;
+            margin-bottom: 20px;
+        }
+    }
+}

@@ -5,3 +5,4 @@
 
 //= modules/menu.js
 //= modules/blog.js
+//= modules/popup.js

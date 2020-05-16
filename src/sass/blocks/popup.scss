@@ -1,0 +1,268 @@
+.popup {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.2);
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: 23px 10px;
+    overflow: auto;
+    text-align: center;
+}
+
+.popup {
+    &__button {
+        width: 155px;
+        margin: 0 auto 0 auto;
+    }
+
+    & h2 {
+        margin-top: 0;
+        font-size: 52px;
+        margin-bottom: 41px;
+    }
+
+    & p{
+        font-weight: 700;
+        font-size: 29px;
+        margin-top: 0;
+        margin-bottom: 6px;
+    }
+
+    & span {
+        font-size: 31px;
+        display: block;
+        margin-bottom: 80px;
+    }
+
+    &__image-desktop {
+        position: absolute;
+        top: -95px;
+        right: -185px;
+    }
+
+    &__image-mobile {
+        position: absolute;
+        display: none;
+        width: 100%;
+        height: auto;
+        max-width: 381px;
+    }
+
+    &__block {
+        width: calc(100% - 40px);
+        max-width: 812px;
+        background: white;
+        border-radius: 48px;
+        padding: 117px 0 102px 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 3px 48px rgba(0, 0, 0, 0.16);
+    }
+
+    &__rating {
+        display: flex;
+        align-items: center;
+        margin-bottom: 23px;
+
+        & ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            margin-left: auto;
+            margin-right: 22px;
+
+            & li {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    &__form {
+        width: 100%;
+        padding: 0 20px;
+        max-width: 434px;
+        margin: 0 auto;
+
+        & label {
+           & svg {
+            fill: #f1f1f1
+            }
+        }
+
+        & span {
+            font-size: 22px;
+            padding-right: 15px;
+            margin-bottom: 0;
+        }
+
+        & input {
+            width: 100%;
+            height: 64px;
+            background-color: #f1f1f1;
+            box-shadow: none;
+            border: none;
+            text-align: right;
+            font-size: 22px;
+            color: #363636;
+            padding: 0 14px;
+            margin-bottom: 25px;
+            font-family: $font;
+
+            &:focus {
+                outline: 1px solid $blue;
+            }
+
+            &:active {
+                outline: 1px solid $blue;
+            }
+        }
+
+        & textarea {
+            font-family: $font;
+            width: 100%;
+            height: 196px;
+            background-color: #f1f1f1;
+            box-shadow: none;
+            border: none;
+            text-align: right;
+            font-size: 22px;
+            color: #363636;
+            padding: 14px;
+            margin-bottom: 25px;
+            resize: none;
+
+            &:focus {
+                outline: 1px solid $blue;
+            }
+
+            &:active {
+                outline: 1px solid $blue;
+            }
+        }
+    }
+
+    &__submit {
+        margin: 0 auto 0 auto;
+        width: 155px;
+    }
+}
+
+.popup--testimonial .popup__block{
+    padding-top: 61px;
+    padding-bottom: 58px;
+}
+
+.popup--testimonial h2 {
+    font-size: 26px;
+    margin-bottom: 72px;
+}
+
+.popup input[type=radio]:checked + label {
+    & svg {
+        fill: #efb01e;
+    }
+}
+
+@media(max-width: 1200px) {
+    .popup {
+        padding: 0 20px;
+
+        &__image-desktop {
+            display: none;
+            }
+    
+        &__image-mobile {
+            display: block;
+            left:50%;
+            transform: translateX(-50%);
+            bottom: -140px;
+        }
+
+        &__block {
+            max-width: 500px;
+            padding: 42px 10px 63px 10px;
+        }
+        & h2 {
+            font-size: 30px;
+            margin-bottom: 29px;
+        }
+
+        & p {
+            font-size: 23px;
+            margin-bottom: 4px;
+        }
+
+        & span {
+            font-size: 26px;
+            margin-bottom: 34px;
+        }
+
+        &__button {
+            width: 106px;
+            font-size: 12px;
+            height: 35px;
+        }
+
+        &__rating {
+            margin-bottom: 20px;
+
+            & ul {
+                margin-left: auto;
+                & li {
+                 margin-left: 5px;
+                }
+            }
+            & span {
+                display: block;
+                font-size: 19px;
+                margin-bottom: 0;
+                padding-right: 20px;
+            }
+        }
+
+        &__form {
+            & input {
+                height: 58px;
+                font-size: 19px;
+            }
+
+            & textarea {
+                height: 178px;
+                font-size: 19px;
+            }
+        }
+
+        &__submit {
+            width: 141px;
+            height: 47px;
+            font-size: 16px;
+        }
+    }
+
+    .popup--testimonial h2 {
+        font-size: 23px;
+        margin-bottom: 64px;
+    }
+
+    .popup--testimonial .popup__block{
+        padding-top: 54px;
+        padding-bottom: 50px;
+    }
+}
+
+@media(max-width: 410px) {
+    .popup__image-mobile {
+        bottom: -120px;
+    }
+}
+
+@media(max-width: 375px) {
+    .popup__image-mobile {
+        bottom: -100px;
+    }
+}

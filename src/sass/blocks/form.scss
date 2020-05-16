@@ -12,6 +12,19 @@
     url('../img/form/form-right.png') no-repeat 100% 180px;
     background-color: white;
 
+    &__row {
+        display: flex;
+        justify-content: space-between;
+
+        & div {
+            width: 31.5%;
+        }
+    }
+
+    &__column {
+        width: 48%;
+    }
+
     & div {
         position: relative;
         & p {
@@ -47,6 +60,7 @@
         margin-top: 0;
         position: relative;
         margin-bottom: 90px;
+        width: 100%;
 
         &::after {
             content: "";
@@ -105,7 +119,40 @@
         }
     }
 
+    & textarea {
+        font-family: $font;
+        width: 100%;
+        height: 175px;
+        background-color: #f1f1f1;
+        box-shadow: none;
+        border: none;
+        text-align: right;
+        font-size: 22px;
+        color: #363636;
+        padding: 14px;
+        margin-bottom: 38px;
+        resize: none;
+
+        &:focus {
+            outline: 1px solid $blue;
+        }
+
+        &:active {
+            outline: 1px solid $blue;
+        }
+    }
+
     &__email.error {
+        & input {
+            color: red;
+        }
+
+        & p {
+            display: block;
+        }
+    }
+
+    &__phone.error {
         & input {
             color: red;
         }
@@ -126,6 +173,16 @@
     }
 
     &__password-repeat.error {
+        & input {
+            color: red;
+        }
+
+        & p {
+            display: block;
+        }
+    }
+
+    &__password-new.error {
         & input {
             color: red;
         }
@@ -170,6 +227,33 @@
             text-decoration: none;
         }
     }
+
+    &--width {
+        max-width: 1285px;
+        margin-bottom: 95px;
+
+        & form {
+            max-width: 844px;
+        }
+    }
+
+    &--account {
+        background: white;
+        margin-bottom: 30px;
+
+        & form {
+            max-width: 815px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        
+        & .form__submit {
+            margin-top: 30px;
+            width: 155px;
+        }
+    }
 }
 
 @include mobile {
@@ -177,6 +261,26 @@
         padding-top: 51px;
         background: white;
         padding-bottom: 0px;
+
+        &__row {
+            flex-direction: column-reverse;
+
+            & div {
+                width: 100%;
+            }
+        }
+
+        &--width {
+            padding-left: 38px;
+            padding-right: 38px;
+            margin-bottom: 55px;
+        }
+
+        & textarea {
+            height: 272px;
+            margin-bottom: 15px;
+        }
+
         & h1 {
             font-size: 24px;
             margin-bottom: 80px;

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Boost</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page-body">
+  <header class="header">
+    <div class="header__overlay"></div>
+    <button class="header__burger">
+      <img src="img/burger.svg" alt="burger menu">
+    </button>
+      <nav>
+        <a class="header__auth" href="#">
+            <img src="img/menu/menu-user.svg" alt="icon">
+            <span>התחבר</span>
+        </a>
+        <a class="header__cart" href="#">
+             <img src="img/menu/menu-cart.svg" alt="icon">
+             <span>העגלה שלי</span>
+        </a>
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="img/menu/menu-1.svg" alt="icon">
+                    <span>יצירת קשר</span>
+                </a>
+            </li>
+            <li>
+             <a href="#">
+                 <img src="img/menu/menu-2.svg" alt="icon">
+                 <span>בלוג</span>
+             </a>
+         </li>
+         <li>
+             <a href="#">
+                 <img src="img/menu/menu-3.svg" alt="icon">
+                 <span>שירותים נוספים</span>
+             </a>
+         </li>
+         <li>
+             <a href="#">
+                 <img src="img/menu/menu-4.svg" alt="icon">
+                 <span>קידום בטוויטר</span>
+             </a>
+         </li>
+         <li>
+             <a href="#">
+                 <img src="img/menu/menu-5.svg" alt="icon">
+                 <span>קידום בטיק-טוק</span>
+             </a>
+         </li>
+         <li>
+             <a href="#">
+                 <img src="img/menu/menu-6.svg" alt="icon">
+                 <span>קידום בטיק-טוק</span>
+             </a>
+         </li>
+         <li>
+             <a href="#">
+                 <img src="img/menu/menu-7.svg" alt="icon">
+                 <span>קידום ביוטיוב</span>
+             </a>
+         </li>
+         <li>
+             <a href="#">
+                 <img src="img/menu/menu-8.svg" alt="icon">
+                 <span>קידום בפייסבוק</span>
+             </a>
+         </li>
+         <li>
+             <a href="#">
+                 <img src="img/menu/menu-9.svg" alt="icon">
+                 <span>קידום באינסטגרם</span>
+             </a>
+         </li>
+        </ul>
+ 
+    </nav>
+    <!-- </div> -->
+  
+   <a  class="header__logo" href="/">
+    <img src="img/menu/menu-logo.svg" alt="logo">
+    </a>
+  </header>
+  <main>
+      <section class="decor-block">
+          <picture>
+              <img class="decor-block__background" src="img/form/form-back.png" alt="" width="1844">
+          </picture>
+          <div class="decor-block__form form form--width">
+              <h1>צרו קשר</h1>
+              <form  action="#" method="post">
+                <div class="form__row">
+                  <div class="form__phone">
+                    <p>שם משתמש לא קיים</p>
+                    <label class="visually-hidden" for="phone">טלפון</label>
+                    <input id="phone" login="name" type="text" placeholder="טלפון" required>
+                  </div>
+                  <div class="form__email">
+                    <p>שם משתמש לא קיים</p>
+                    <label class="visually-hidden" for="email">כתובת מייל</label>
+                    <input id="email" name="email" type="email" placeholder="כתובת מייל" required>
+                  </div>
+                  <div class="form__name">
+                    <p>שם משתמש לא קיים</p>
+                    <label class="visually-hidden" for="name">שם משתמש</label>
+                    <input id="name" name="name" type="text" placeholder="שם משתמש" required>
+                  </div>
+                </div>
+                <label for="comment" class="visually-hidden">הודעה</label>
+                <textarea id="comment" name="comment" required placeholder="הודעה"></textarea>
+                  <button class="button button--blue form__submit">שליחה</button>
+              </form>
+          </div>
+      </section>
+  </main>
+  <footer class="footer">
+    <a href="#" class="footer__up js-up">
+      <img src="img/arrow.svg" alt="arrow up">
+    </a>
+    <div class="footer__logo">
+      <span></span>
+      <a href="#"> 
+        <img src="img/footer-logo.svg" alt="logo"> 
+        <img class="footer__logo-mobile" src="img/footer-logo-mobile.svg" alt="logo">
+      </a>
+      <span></span>
+    </div>
+    <div class="wrapper">
+      <div class="footer__icons">
+        <ul class="footer__pay-list">
+          <li class="footer__pay-item footer__pay-item--master">
+            <picture>
+              <img src="img/mastercard.png" srcset ="img/mastercard@2x.png 2x" alt="mastercard logo" width="118" height ="70">
+            </picture>
+          </li>
+          <li class="footer__pay-item footer__pay-item--paypal">
+            <picture>
+              <img src="img/paypal.png" srcset ="img/paypal@2x.png 2x" alt="paypal logo" width="129" height ="33">
+            </picture>
+          </li>
+          <li class="footer__pay-item footer__pay-item--logo">
+            <picture>
+              <img src="img/logo.png" srcset ="img/logo@2x.png 2x" alt="logo" width="166" height ="54">
+            </picture>
+          </li>
+          <li class="footer__pay-item footer__pay-item--visa">
+            <picture>
+              <img src="img/visa.png" srcset ="img/visa@2x.png 2x" alt="visa logo" width="114" height="37">
+            </picture>
+          </li>
+        </ul>
+        <ul class="footer__social-list social-list">
+          <li>
+            <a href="#">
+             <img src="img/facebook.svg" alt="facebook logo">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+             <img src="img/whatsapp.svg" alt="whatsapp logo">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+             <img src="img/instagram.svg" alt="instagram logo">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+             <img src="img/messenger.svg" alt="messenger logo">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__menu-block">
+        <div class="footer__recommend">
+          <p>קישורים מומלצים</p>
+          <ul>
+            <li>
+              <a href="#">לורם איפסום</a>
+            </li>
+            <li>
+              <a href="#">לורם איפסום</a>
+            </li>
+            <li>
+              <a href="#">לורם איפסום</a>
+            </li>
+            <li>
+              <a href="#">לורם איפסום</a>
+            </li>
+            <li>
+              <a href="#">לורם איפסום</a>
+            </li>
+            <li>
+              <a href="#">לורם איפסום</a>
+            </li>
+            <li>
+              <a href="#">לורם איפסום</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__recommend">
+          <p>קישורים מומלצים</p>
+          <ul>
+            <li>
+              <a href="#">לורם איפסום</a>
+            </li>
+            <li>
+              <a href="#">לורם איפסום</a>
+            </li>
+            <li>
+              <a href="#">לורם איפסום</a>
+            </li>
+            <li>
+              <a href="#">לורם איפסום</a>
+            </li>
+            <li>
+              <a href="#">לורם איפסום</a>
+            </li>
+            <li>
+              <a href="#">לורם איפסום</a>
+            </li>
+            <li>
+              <a href="#">לורם איפסום</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__nav">
+          <p>ניווט באתר</p>
+          <ul>
+            <li>
+              <a href="#">דף הבית</a>
+            </li>
+            <li>
+              <a href="#">קידום באינסטגרם</a>
+            </li>
+            <li>
+              <a href="#">קידום בפייסבוק</a>
+            </li>
+            <li>
+              <a href="#">קידום ביוטיוב</a>
+            </li>
+            <li>
+              <a href="#">קידום בטיקטוק</a>
+            </li>
+            <li>
+              <a href="#">קידום בלינקדאין</a>
+            </li>
+            <li>
+              <a href="#">קידום בטוויטר</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom" >
+      <img src="img/footer-bottom.jpg" srcset="img/footer-bottom@2x.jpg" alt="footer" width="1920" height="52">
+    </div>
+  </footer>
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,7 +1,6 @@
 .footer {
     width: 100%;
     background-color: $footer;
-    margin-top: 90px;
     position: relative;
 
     & .wrapper {
@@ -208,10 +207,6 @@
 }
 
 @include mobile {
-
-    .footer {
-        margin-top: 82px;
-    }
 
     .footer__logo {
         & span {
