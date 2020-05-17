@@ -92,117 +92,19 @@
           <picture>
               <img class="decor-block__background" src="img/form/form-back.png" alt="" width="1844">
           </picture>
-          <div class="decor-block__form order">
+          <div class="decor-block__form order order--complete">
              <div class="order__steps">
                <div class="order__step order__step--prev">1</div>
                <div class="order__line order__line--active"></div>
-               <div class="order__step order__step--active">2</div>
-               <div class="order__line"></div>
-               <div class="order__step">3</div>
+               <div class="order__step order__step--prev">2</div>
+               <div class="order__line order__line--active"></div>
+               <div class="order__step order__step--active">3</div>
              </div>
-              <h1>תשלום</h1>
-              <table class="order__list order__list--payment">
-                <thead>
-                  <th>סה"כ</th>
-                  <th>כמות</th>
-                  <th>מוצר</th>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>₪950</td>
-                    <td>150</td>
-                    <td>לייקים באינסטגרם</td>
-                  </tr>
-                  <tr>
-                    <td>₪950</td>
-                    <td>150</td>
-                    <td>לייקים באינסטגרם</td>
-                  </tr>
-                  <tr>
-                    <td>₪950</td>
-                    <td>150</td>
-                    <td>לייקים באינסטגרם</td>
-                  </tr>
-                  <tr>
-                    <td>₪950</td>
-                    <td>150</td>
-                    <td>עוקבים באינסטגרם</td>
-                  </tr>
-                </tbody>
-              </table>
-              <p class="order__total order__total--payment"><span>₪3,250 </span>סה"כ:</p>
-              <div class="order__form">
-                <form action="#">
-                  <div class="order__column">
-                    <h2>פרטי תשלום</h2>
-                    <div class="order__row">
-                      <div>
-                        <input class="visually-hidden" type="radio" name="pay" id="pay-1" value = "pay-1">
-                        <label for="pay-1">כרטיס אשראי</label>
-                      </div>
-                      <div>
-                        <input class="visually-hidden" type="radio" name="pay" id="pay-2" value = "pay-2" checked>
-                        <label for="pay-2">PayPal</label>
-                      </div>
-                    </div>
-                    <div class="order__form-number">
-                      <p>שם משתמש לא קיים</p>
-                      <label for="number">:מספר כרטיס</label>
-                      <input type="text" name="number" id="number" placeholder="שם מלא">
-                    </div>
-                    <div class="order__row">
-                      <label for="month">:תוקף כרטיס</label>
-                      <select dir="rtl" name="month" id="month" required>
-                        <option selected disabled hidden>חודש</option>
-                        <option>01</option>
-                        <option>02</option>
-                        <option>03</option>
-                        <option>04</option>
-                        <option>05</option>
-                        <option>06</option>
-                        <option>07</option>
-                        <option>08</option>
-                        <option>09</option>
-                        <option>10</option>
-                        <option>11</option>
-                        <option>12</option>
-                      </select>
-                      <select dir="rtl" name="year" id="year" required>
-                        <option selected disabled hidden>שנה</option>
-                        <option>2020</option>
-                        <option>2021</option>
-                        <option>2022</option>
-                        <option>2023</option>
-                        <option>2024</option>
-                      </select>
-                    </div>
-                    <div class="order__form-code">
-                      <p>שם משתמש לא קיים</p>
-                      <label for="code">:3 ספרות בגב הכרטיס</label>
-                      <input type="text" name="code" id="code" placeholder="כתובת מייל">
-                    </div>
-                  </div>
-                  <div class="order__column">
-                    <h2>פרטים אישיים</h2>
-                    <div  class="order__form-name">
-                      <p>שם משתמש לא קיים</p>
-                      <label for="name">:שם מלא</label>
-                      <input type="text" name="name" id="name" placeholder="שם מלא">
-                    </div>
-                    <div class="order__form-phone">
-                      <p>שם משתמש לא קיים</p>
-                      <label for="phone">:טלפון נייד</label>
-                      <input type="text" name="phone" id="phone" placeholder= "000-000-0000">
-                    </div>
-                    <div  class="order__form-email">
-                      <p>שם משתמש לא קיים</p>
-                      <label for="email">:כתובת מייל</label>
-                      <input type="email" name="email" id="email" placeholder="כתובת מייל">
-                    </div>
-                  </div>
-                  <button class="order__submit button button--blue"><img src="img/blog-arrow.svg" alt="arrow">בצע הזמנה</button>
-                </form>
-              </div>
+             <div class="order__complete">
+               <h1>!ההזמנה הושלמה</h1>
+               <p>.לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית</p>
+               <a class="button button--blue" href="#">חזרה לאתר</a>
+             </div>
           </div>
       </section>
   </main>
