@@ -94,58 +94,95 @@
           </picture>
           <div class="decor-block__form order">
              <div class="order__steps">
-               <div class="order__step order__step--active">1</div>
-               <div class="order__line"></div>
-               <div class="order__step">2</div>
+               <div class="order__step order__step--prev">1</div>
+               <div class="order__line order__line--active"></div>
+               <div class="order__step order__step--active">2</div>
                <div class="order__line"></div>
                <div class="order__step">3</div>
              </div>
-             <div class="order__header-block">
-              <p>קופון:<span></span></p>
-              <h1>עגלת קניות</h1>
-            </div>
-             <div class="order__wrapper-out">
-               <div class="order__wrapper-inner">
-                <table class="order__list">
-                  <thead>
-                    <th>סה"כ</th>
-                    <th>כמות</th>
-                    <th>מוצר</th>
-                    <th>כתובת</th>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>₪950</td>
-                      <td>150</td>
-                      <td>לייקים באינסטגרם</td>
-                      <td>p/B1GH_UNlxnz <img src="img/cart-1.png" alt="icon"></td>
-                    </tr>
-                    <tr>
-                      <td>₪950</td>
-                      <td>150</td>
-                      <td>לייקים באינסטגרם</td>
-                      <td>p/B1GH_UNlxnz <img src="img/cart-2.png" alt="icon"></td>
-                    </tr>
-                    <tr>
-                      <td>₪950</td>
-                      <td>150</td>
-                      <td>לייקים באינסטגרם</td>
-                      <td>p/B1GH_UNlxnz <img src="img/cart-3.png" alt="icon"></td>
-                    </tr>
-                    <tr>
-                      <td>₪950</td>
-                      <td>150</td>
-                      <td>עוקבים באינסטגרם</td>
-                      <td>rancomcreative <img src="img/cart-4.png" alt="icon"></td>
-                    </tr>
-                  </tbody>
-                </table>
-               </div>
-             </div>
-            <p class="order__total"><span>₪3,250 </span>סה"כ:</p>
-            <a href="#" class="order__button button button--blue"><img src="img/blog-arrow.svg" alt="arrow">המשך לתשלום</a>
+              <h1>תשלום</h1>
+              <table class="order__list order__list--payment">
+                <thead>
+                  <th>סה"כ</th>
+                  <th>כמות</th>
+                  <th>מוצר</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>₪950</td>
+                    <td>150</td>
+                    <td>לייקים באינסטגרם</td>
+                  </tr>
+                  <tr>
+                    <td>₪950</td>
+                    <td>150</td>
+                    <td>לייקים באינסטגרם</td>
+                  </tr>
+                  <tr>
+                    <td>₪950</td>
+                    <td>150</td>
+                    <td>לייקים באינסטגרם</td>
+                  </tr>
+                  <tr>
+                    <td>₪950</td>
+                    <td>150</td>
+                    <td>עוקבים באינסטגרם</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="order__total order__total--payment"><span>₪3,250 </span>סה"כ:</p>
+              <div class="order__form">
+                <form action="#">
+                  <div class="order__column">
+                    <h2>פרטי תשלום</h2>
+                    <div class="order__row">
+                      <div>
+                        <input class="visually-hidden" type="radio" name="pay" id="pay-1" value = "pay-1">
+                        <label for="pay-1">כרטיס אשראי</label>
+                      </div>
+                      <div>
+                        <input class="visually-hidden" type="radio" name="pay" id="pay-2" value = "pay-2" checked>
+                        <label for="pay-2">PayPal</label>
+                      </div>
+                    </div>
+                    <div class="order__form-number">
+                      <p>שם משתמש לא קיים</p>
+                      <label for="number">:מספר כרטיס</label>
+                      <input type="text" name="number" id="number" placeholder="שם מלא">
+                    </div>
+                    <div class="order__row">
+                      <label for="month">:תוקף כרטיס</label>
+                      <select name="month" id="month" required></select>
+                      <select name="year" id="year" required></select>
+                    </div>
+                    <div class="order__form-code">
+                      <p>שם משתמש לא קיים</p>
+                      <label for="code">:3 ספרות בגב הכרטיס</label>
+                      <input type="text" name="code" id="code" placeholder="כתובת מייל">
+                    </div>
+                  </div>
+                  <div class="order__column">
+                    <h2>פרטים אישיים</h2>
+                    <div  class="order__form-name">
+                      <p>שם משתמש לא קיים</p>
+                      <label for="name">:שם מלא</label>
+                      <input type="text" name="name" id="name" placeholder="שם מלא">
+                    </div>
+                    <div class="order__form-phone">
+                      <p>שם משתמש לא קיים</p>
+                      <label for="phone">:טלפון נייד</label>
+                      <input type="text" name="phone" id="phone" placeholder= "000-000-0000">
+                    </div>
+                    <div  class="order__form-email">
+                      <p>שם משתמש לא קיים</p>
+                      <label for="email">:כתובת מייל</label>
+                      <input type="email" name="email" id="email" placeholder="כתובת מייל">
+                    </div>
+                  </div>
+                  <button class="order__submit button button--blue"><img src="img/blog-arrow.svg" alt="arrow">בצע הזמנה</button>
+                </form>
+              </div>
           </div>
-          
       </section>
   </main>
   <footer class="footer">
