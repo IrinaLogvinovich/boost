@@ -2,7 +2,7 @@
     width: 100%;
     position: relative;
     overflow: hidden;
-    padding: 153px 17px 90px 17px;
+    padding: 153px 17px 140px 17px;
     z-index: 1;
 
     &__background {
@@ -78,6 +78,13 @@
 
             &:first-child {
                 margin-right: 5%;
+            }
+            &:not(:first-child){
+                & img {
+                    width: 100%;
+                    max-width: 398px;
+                    height: auto;
+                }
             }
         }
 
@@ -181,12 +188,30 @@
 
                 & li {
                     width: 32%;
+                    margin-bottom: 6px;
 
                     & label {
                         display: block;
                         position: relative;
                         margin-bottom: 0;
                         width: auto;
+                        max-height: 161px;
+
+                        & .good__price {
+                            display: block;
+                            position: absolute;
+                            width: 90%;
+                            bottom: 7px;
+                            left: 5%;
+                            font-size: 22px;
+                            color: #363636;
+                            background: $grey;
+                            display: block;
+                            line-height: 45px;
+                            text-align: center;
+                            z-index: 1;
+                            display: none;
+                        }
                     }
                     & span {
                         position: absolute;
@@ -200,10 +225,52 @@
                         margin: 0 0 2px 2px;
 
                         & img {
-                            margin-right: 5px;
+                            margin-right: 0 5px;
+                        }
+                    }
+
+                    & input[type=checkbox]:checked + label {
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            left: 0;
+                            top: 0;
+                            background: url('../img/label-check.png') no-repeat center 20px;
+                            background-color: rgba(0, 0, 0, 0.2);
+                            z-index: 1;
+                        }
+
+                        & .good__price {
+                            display: block;
                         }
                     }
                 }
+            }
+        }
+
+        &-more {
+            padding: 8px 25px;
+            background: $grey;
+            display: block;
+            margin: 0 auto;
+            text-decoration: none;
+            color: #363636;
+            font-size: 18px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        &-total {
+            font-size: 24px;
+            color: black;
+            margin-bottom: 7px;
+
+            & span {
+                font-weight: 700;
+                font-size: 32px;
+                color: black;
             }
         }
     }
@@ -241,6 +308,85 @@
 
         &::before {
             display: none;
+        }
+    }
+
+    &__button-block {
+        width: 100%;
+        max-width: 346px;
+        margin: 0 auto 0 auto;
+        flex-direction: row !important;
+        justify-content: space-between;
+    }
+
+    &__submit {
+        width: 159px;
+        border: 1px solid #a02b75;
+        background: white;
+        color: black;
+
+        & img {
+            margin-right: 13px;
+            filter: invert(100%);
+        }
+
+        &:hover {
+            background: #a02b75;
+            color: white;
+            & img {
+                filter: invert(0%);
+            }
+
+        }
+    }
+
+    &__note {
+        width: 100%;
+        max-width: 495px;
+        margin: 20px auto 0 auto;
+        background: $grey;
+        min-height: 159px;
+        border-radius: 31px;
+        padding: 30px 46px 30px 46px;
+        text-align: center;
+
+
+        & h3 {
+            margin: 0 auto 0 auto;
+            display: inline-block;
+            text-align: center;
+            position: relative;
+            font-size: 31px;
+            font-size: 22px;
+            padding-right: 48px;
+            background: url('../img/note-header.png') no-repeat 100% 0;
+        }
+
+        & p {
+            text-align: right;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media(max-width: 1024px) {
+    .good__form {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media(max-width: 767px) {
+    .good{
+        &__form-column {
+            width: 100%;
+            &:not(:first-child){
+                & img {
+                    margin: 0 auto;
+                }
+                order: -1;
+            }
         }
     }
 }
