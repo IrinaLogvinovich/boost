@@ -9,6 +9,11 @@
     }
 
     &--instagram {
+        & .testimonials__button {
+            background: $instagram;
+            position: relative;
+            z-index: 2;
+        }
         & .catalog__button {
             background: $instagram;
         }
@@ -20,6 +25,192 @@
         & .catalog .noUi-handle {
             background: url('../img/services/rocket-instagram.svg') no-repeat center center;
             background-color: white;
+        }
+        & .catalog .noUi-connect {
+            background: $instagram;
+            border-radius: 6px;
+        }
+
+        & .good .noUi-handle {
+            background: url('../img/services/rocket-instagram.svg') no-repeat center center;
+            background-color: white;
+        }
+        & .good .noUi-connect {
+            background: $instagram;
+            border-radius: 6px;
+        }
+    }
+
+    &--facebook {
+        & .testimonials__button {
+            background: $facebook;
+            position: relative;
+            z-index: 2;
+        }
+        & .catalog__button {
+            background: $facebook;
+        }
+
+        & .catalog svg {
+            fill: $facebook;
+        }
+
+        & .catalog .noUi-handle {
+            background: url('../img/services/rocket-facebook.svg') no-repeat center center;
+            background-color: white;
+        }
+
+        & .catalog .noUi-connect {
+            background: $facebook;
+            border-radius: 6px;
+        }
+
+        & .good .noUi-handle {
+            background: url('../img/services/rocket-facebook.svg') no-repeat center center;
+            background-color: white;
+        }
+
+        & .good .noUi-connect {
+            background: $facebook;
+            border-radius: 6px;
+        }
+    }
+    &--youtube {
+        & .testimonials__button {
+            background: $youtube;
+            position: relative;
+            z-index: 2;
+        }
+
+        & .catalog__button {
+            background: $youtube;
+        }
+
+        & .catalog svg {
+            fill: $youtube;
+        }
+
+        & .catalog .noUi-handle {
+            background: url('../img/services/rocket-youtube.svg') no-repeat center center;
+            background-color: white;
+        }
+
+        & .catalog .noUi-connect {
+            background: $youtube;
+            border-radius: 6px;
+        }
+
+        & .good .noUi-handle {
+            background: url('../img/services/rocket-youtube.svg') no-repeat center center;
+            background-color: white;
+        }
+
+        & .good .noUi-connect {
+            background: $youtube;
+            border-radius: 6px;
+        }
+    }
+
+    &--linkedin {
+        & .testimonials__button {
+            background: $linkedin;
+            position: relative;
+            z-index: 2;
+        }
+        & .catalog__button {
+            background: $linkedin;
+        }
+
+        & .catalog svg {
+            fill: $linkedin;
+        }
+
+        & .catalog .noUi-handle {
+            background: url('../img/services/rocket-linkedin.svg') no-repeat center center;
+            background-color: white;
+        }
+
+        & .catalog .noUi-connect {
+            background: $linkedin;
+            border-radius: 6px;
+        }
+
+        & .good .noUi-handle {
+            background: url('../img/services/rocket-linkedin.svg') no-repeat center center;
+            background-color: white;
+        }
+
+        & .good .noUi-connect {
+            background: $linkedin;
+            border-radius: 6px;
+        }
+    }
+    &--twitter {
+        & .testimonials__button {
+            background: $twitter;
+            position: relative;
+            z-index: 2;
+        }
+        & .catalog__button {
+            background: $twitter;
+        }
+
+        & .catalog svg {
+            fill: $twitter;
+        }
+
+        & .catalog .noUi-handle {
+            background: url('../img/services/rocket-twitter.svg') no-repeat center center;
+            background-color: white;
+        }
+
+        & .catalog .noUi-connect {
+            background: $twitter;
+            border-radius: 6px;
+        }
+
+        & .good .noUi-handle {
+            background: url('../img/services/rocket-twitter.svg') no-repeat center center;
+            background-color: white;
+        }
+
+        & .good .noUi-connect {
+            background: $twitter;
+            border-radius: 6px;
+        }
+    }
+    &--tiktok {
+        & .testimonials__button {
+            background: $tiktok;
+            position: relative;
+            z-index: 2;
+        }
+        & .catalog__button {
+            background: $tiktok;
+        }
+
+        & .catalog svg {
+            fill: $tiktok;
+        }
+
+        & .catalog .noUi-handle {
+            background: url('../img/services/rocket-tiktok.svg') no-repeat center center;
+            background-color: white;
+        }
+
+        & .catalog .noUi-connect {
+            background: $tiktok;
+            border-radius: 6px;
+        }
+
+        & .good .noUi-handle {
+            background: url('../img/services/rocket-tiktok.svg') no-repeat center center;
+            background-color: white;
+        }
+
+        & .good .noUi-connect {
+            background: $tiktok;
+            border-radius: 6px;
         }
     }
 }

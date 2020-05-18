@@ -4,6 +4,7 @@
     display: flex;
     position: relative;
     z-index: 1;
+    box-shadow: 0 3px 38px rgba(0, 0, 0, 0.16);
 
     & nav {
         padding: 0 0 0 40px;
@@ -64,10 +65,15 @@
         margin-top: 5px;
         padding-right: 80px;
         margin-right: 0;
+
+        &-invert{
+            display: none;
+        }
     }
 
     &--service {
         margin-top: 55px;
+        box-shadow: none;
 
         & ul a {
             color: white;
