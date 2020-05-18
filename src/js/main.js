@@ -6,3 +6,4 @@
 //= modules/menu.js
 //= modules/blog.js
 //= modules/popup.js
+//= modules/range.js

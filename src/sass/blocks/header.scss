@@ -3,6 +3,7 @@
     padding-bottom: 5px;
     display: flex;
     position: relative;
+    z-index: 1;
 
     & nav {
         padding: 0 0 0 40px;
@@ -64,6 +65,39 @@
         padding-right: 80px;
         margin-right: 0;
     }
+
+    &--service {
+        margin-top: 55px;
+
+        & ul a {
+            color: white;
+        }
+
+        & a {
+            color: white;
+
+            & img {
+                filter: invert(100%);
+            }
+        }
+
+        & nav {
+            padding-left: 100px;
+        }
+
+        & .header__logo {
+            padding-right: 70px;
+
+            & img {
+                display: none;
+            }
+
+            & .header__logo-invert {
+                display: block;
+                filter: invert(0%);
+            }
+        }
+    }
 }
 
 .header__burger {
@@ -74,7 +108,7 @@
     top: 50%;
     transform: translateY(-50%);
     left: 40px;
-    z-index: 6;
+    z-index: 11;
     display: none;
 }
 
@@ -95,17 +129,42 @@
 
 @media(max-width: 1600px) {
     .header {
+        background: white;
+
+        &--service {
+            margin-top: 0;
+            & a {
+                color: black;
+
+                & img {
+                    filter: invert(0%);
+                }
+            }
+            & .header__logo {
+                padding-right: 20px;
+    
+                & img {
+                    display: block;
+                }
+    
+                & .header__logo-invert {
+                   display: none;
+                }
+            }
+        }
         & nav {
             display: none;
             flex-direction: column;
             padding-top: 64px;
             padding-right: 35px;
             position: absolute;
+            padding-left: 40px;
+
             top: 0;
             left: 0;
             background: white;
             max-width: 305px;
-            z-index: 3;
+            z-index: 10;
             height: 100vh;
             box-shadow: 18px 3px 32px rgba(0, 0, 0, 0.16);
 
@@ -119,6 +178,10 @@
                     width: 50%;
                     margin-bottom: 38px;
                 }
+
+                & a {
+                    color: black;
+                }
             }
         }
 
@@ -126,6 +189,7 @@
             position: absolute;
             left: 49px;
             bottom: 25px;
+            color: black;
         }
 
         &__cart {
@@ -137,6 +201,8 @@
                 width: 26px;
                 height: auto;
             }
+
+            color: black;
         }
 
         &__logo {

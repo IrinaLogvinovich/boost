@@ -315,7 +315,11 @@
         }
     }
 }
-
+@media(max-width: 600px) {
+    .footer {
+        order: 2;
+    }
+}
 @media(max-width: 374px) {
     .footer__pay-item {
         width: 49%;

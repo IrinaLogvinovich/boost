@@ -1,0 +1,239 @@
+.catalog {
+    position: relative;
+    z-index: 0;
+
+    margin: 0 27px;
+    margin-top: -30px;
+
+    & h2 {
+        font-family: $font;
+        font-size: 42px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    & ul {
+        width: 100%;
+        max-width: 1640px;
+        margin: 100px auto 0 auto;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: center;
+
+        & li {
+            width: 32%;
+            max-width: 495px;
+            background: white;
+            border-radius: 48px;
+            margin-bottom: 4.2vw;
+            padding: 27px 83px 38px 83px;
+            box-shadow: 0 6px 48px rgba(0, 0, 0, 0.08);
+
+            & h3 {
+                font-size: 26px;
+                margin-top: 15px;
+            }
+
+            & p {
+                font-size: 32px;
+                font-weight: 700;
+                margin-top: 42px;
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    &__button {
+        margin: 0 auto 0 auto;
+        width: 155px;
+        height: 51px;
+
+        & img {
+            margin-right: 14px;
+        }
+    }
+
+    & .noUi-target {
+        box-shadow: none;
+        background: $grey;
+        border: none;
+        height: 12px;
+        border-radius: 6px;
+    }
+
+    & .noUi-connect {
+        background: $instagram;
+        border-radius: 6px;
+    }
+
+    & .noUi-connects {
+        border-radius: 6px;
+    }
+
+    &__range-item-value {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 18px;
+
+    }
+
+    & .noUi-handle {
+        width: 44px;
+        height: 44px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        background: white;
+        border-radius: 50%;
+        top: -18px;
+        border: none;
+        outline: none;
+        z-index: 1;
+
+        &::after {
+            display: none;
+        }
+
+        &::before {
+            display: none;
+        }
+    }
+}
+
+@media(max-width: 1024px) {
+    .catalog {
+        padding-bottom: 130px;
+        & ul {
+            & li {
+                padding: 20px 20px 20px 20px;
+            }
+        }
+
+        &__range {
+            padding: 0 15px;
+        }
+        & ul {
+            padding: 0 10px;
+            margin : 0;
+            & li {
+
+                padding: 15px 20px 23px 20px;
+                margin-bottom: 45px;
+
+                & h3 {
+                    margin-top: 0;
+                    font-size: 20px;
+                }
+
+                & p {
+                    font-size: 18px;
+                    margin-top: 28px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .catalog {
+        padding-bottom: 50px;
+        & ul {
+            & li {
+                width: 48%;
+                padding: 20px 20px 20px 20px;
+            }
+        }
+
+     & svg {
+            width: 36px;
+        } 
+
+        & h2 {
+            font-size: 18px;
+            margin-bottom: 59px;
+        }
+        & ul {
+            padding: 0 10px;
+            margin : 0;
+            & li {
+                padding: 5px 20px 23px 20px;
+                margin-bottom: 45px;
+
+                & h3 {
+                    margin-top: 0;
+                    font-size: 14px;
+                }
+
+                & p {
+                    font-size: 18px;
+                    margin-top: 28px;
+                    margin-bottom: 14px;
+                }
+            }
+        }
+
+        & .noUi-target {
+
+            height: 8px;
+        }
+
+        & .noUi-connect {
+            height: 8px;
+        }
+        & .noUi-connects {
+            height: 8px;
+        }
+
+        &__range {
+            padding: 0 25px;
+            &-item-value {
+                font-size: 12px;
+                margin-bottom: 10px;
+            }
+        }
+
+        &__button {
+            width: 92px;
+            height: 29px;
+            font-size: 9px;
+
+            & img {
+                width: 13px;
+                margin-right: 3px;
+            }
+        }
+
+        & .noUi-handle {
+            width: 27px;
+            height: 27px;
+            top: -10px;
+        }
+    }
+}
+
+@media(max-width: 600px) {
+    .catalog {
+
+        & svg {
+            width: 36px;
+        } 
+
+        & h2 {
+            font-size: 18px;
+            margin-bottom: 59px;
+        }
+        & ul {
+            padding: 0 10px;
+            margin : 0;
+            & li {
+                width: 100%;
+                max-width: 100%;
+                padding: 5px 20px 23px 20px;
+                margin-bottom: 45px;
+            }
+        }
+    }
+}
+

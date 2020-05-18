@@ -1,0 +1,47 @@
+.page {
+    display: flex;
+    flex-direction: column;
+
+    & .testimonials {
+        padding-bottom: 140px;
+        padding-top: 0;
+        margin-top: -10px;
+    }
+
+    &--instagram {
+        & .catalog__button {
+            background: $instagram;
+        }
+
+        & .catalog svg {
+            fill: $instagram;
+        }
+
+        & .catalog .noUi-handle {
+            background: url('../img/services/rocket-instagram.svg') no-repeat center center;
+            background-color: white;
+        }
+    }
+}
+
+
+@media(max-width: 1024px) {
+    .page {
+        & .testimonials {
+            order: 1;
+            background-position: center 100%;
+        }
+
+        & .advantages__background {
+            width: 1360px;
+            left: -332px;
+        }
+    }
+}
+@media(max-width: 767px) {
+    .page {
+        & .catalog .noUi-handle {
+            background-size: 20px 10px;
+        }
+    }
+}

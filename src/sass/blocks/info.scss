@@ -1,5 +1,5 @@
 .info {
-    padding-bottom: 65px;
+    padding-bottom: 170px;
     padding-top: 45px;
     & .wrapper {
         max-width: 1474px;
@@ -17,6 +17,22 @@
         margin-top: 0;
         font-size: 24px;
         font-weight: 400;
-        margin-bottom: 32px;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 767px){
+    .info {
+        margin-top: -30px;
+        padding-top: 0;
+        padding-bottom: 47px;
+        & h2 {
+            font-size: 16px;
+        }
+
+        & p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
     }
 }
