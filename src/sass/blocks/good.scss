@@ -15,6 +15,34 @@
         z-index: 0;
     }
 
+    &__followers {
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-between;
+        margin-bottom: 46px;
+
+        & div {
+            width: 49%;
+        }
+
+        & label {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $grey;
+            border: 2px solid $grey;
+            width: 100%;
+            min-height: 61px;
+
+        }
+
+        & input[type=radio]:checked + label {
+            color: $instagram;
+            border: 2px solid $instagram;
+            font-weight: 700;
+        }
+    }
+
     &__form {
         width: 100%;
         max-width: 1019px;
@@ -262,7 +290,10 @@
             margin-top: 10px;
             margin-bottom: 10px;
         }
+
         &-total {
+            width: 100%;
+            text-align: center;
             font-size: 24px;
             color: black;
             margin-bottom: 7px;
@@ -368,6 +399,49 @@
             margin-bottom: 10px;
         }
     }
+    &-form__name {
+        position: relative;
+        & p {
+        display: none;
+            position: absolute;
+            z-index: 1;
+            top: 35px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.16);
+            width: auto;
+            background: white;
+            right: 50%;
+            color: #363636;
+            font-size: 14px;
+            font-weight: 400;
+            padding: 11px 15px;
+            border-radius: 20px;
+
+            &::after{
+                content: "";
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                background: white;
+                bottom: 17px;
+                left:98%;
+                transform: rotate(-45deg) translateX(-50%);
+            }
+        }
+    }
+
+    &-form__name.error {
+        & input[type=text] {
+            color: red;
+        }
+        & p {
+        display: block;
+        }
+    }
+}
+.good .good__form--followers {
+    & .good__form-total {
+        margin-top: 75px;
+    }
 }
 
 @media (max-width: 1440px) {
@@ -384,8 +458,39 @@
 }
 
 @media(max-width: 767px) {
+    .good .good__form--followers {
+        & .good__form-total {
+            margin-top: 33px;
+        }
+    }
     .good{
         padding-bottom: 40px;
+
+        &-form__name.error {
+            & input[type=text] {
+                color: red;
+            }
+            & p {
+            display: block;
+            top: 15px;
+            }
+        }
+
+        &__followers {
+            padding: 0 20px;
+            margin-top: -17px;
+            & label {
+                min-height: 45px;
+            }
+        }
+
+        & .good__followers {
+            & label {
+                padding: 0
+    
+            }
+        }
+
         & h1 {
             font-size: 24px;
             margin-bottom: 32px;
@@ -588,6 +693,8 @@
         }
     }
 }
+
+
 
 @media(max-width: 600px) {
     .good{

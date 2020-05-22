@@ -20,6 +20,47 @@
 
         & li {
             margin-right: 43px;
+            position: relative;
+
+            &:hover {
+                & ul {
+                    display: block;
+                }
+            }
+
+            & ul {
+                display: none;
+                position: absolute;
+                background: white;
+                list-style: none;
+                margin: 0;
+                right: -5px;
+                padding: 40px 15px 15px 20px;
+                flex-direction: column;
+                top: 100%;
+                min-width: 150px;
+                z-index: 10;
+                box-shadow: 0 24px 24px rgba(0, 0, 0, 0.08);
+
+                & li {
+                    margin-right: 0;
+                    width: 100%;
+                    margin-bottom: 5px;
+                    text-align: right;
+                }
+
+                & a {
+                    display: block;
+                    font-family: $font;
+                    margin-right: 0;
+                    text-align: right;
+
+                    &:hover {
+                        transition: 0.2s linear;
+                        font-weight: 700;
+                    }
+                }
+            }
         }
 
         & a {
@@ -165,9 +206,10 @@
             padding-right: 35px;
             position: absolute;
             padding-left: 40px;
-
+            transition: transform 0.4s linear;
             top: 0;
             left: 0;
+            transform: translateX(-305px);
             background: white;
             max-width: 305px;
             z-index: 10;
@@ -227,20 +269,64 @@
         }
     }
 
+    .header nav.header__show {
+        animation: 0.4s linear 0s normal forwards running menu;
+    }
+
+    .header nav.header__hide {
+        animation: 0.4s linear 0s reverse forwards running menu;
+    }
+
+
     .header__burger {
         display: block;
     }
 }
 
 @include mobile {
+    .header {
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        & ul {
+            & li {
+                &:hover {
+                    & ul {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
     .header__burger {
+        top: 345x;
         left: 15px;
     }
     .header .header__logo {
         padding-right: 0;
         & img {
+            margin-top: -5px;
             width: 125px;
             height: auto;
         }
     }
+}
+
+@keyframes menu {
+    0% {
+      transform: translateX(-300px);
+     }
+
+    33% {
+      transform: translateX(-200px);
+    }
+
+    67% {
+        transform: translateX(-100px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+    
 }

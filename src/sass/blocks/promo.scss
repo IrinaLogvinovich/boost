@@ -41,6 +41,9 @@
         transform: rotate(-180deg) translateX(50%);
         bottom: 85px;
         left: 50%;
+        & img {
+            animation: 2s linear 0s normal none infinite running arrow;
+        }   
 
     }
 }
@@ -51,7 +54,7 @@
     }
 
     .promo__button {
-        bottom: 0px;
+        bottom: 10px;
     }
 }
 
@@ -64,7 +67,7 @@
     }
 
     .promo__button {
-        bottom: 0px;
+        bottom: 10px;
     }
 }
 
@@ -73,7 +76,7 @@
         min-height: 500px;
     }
     .promo__button {
-        bottom: 0px;
+        bottom: 20px;
     }
 }
 
@@ -86,13 +89,13 @@
 
 @media(max-width: 768px) {
     .promo {
-        min-height: 380px;
+        min-height: 390px;
     }
 }
 
 @include mobile {
     .promo {
-        min-height: 470px;
+        min-height: 480px;
 
         &__background {
             width: 930px;
@@ -102,7 +105,7 @@
         }
 
         &__button {
-            bottom: 0px;
+            bottom: 10px;
         }
 
         & div {
@@ -124,3 +127,26 @@
         }
     }
 }
+@keyframes arrow {
+    0% {
+      transform: translateY(-30%);
+     }
+
+    25% {
+        transform: translateY(-15%);
+    }
+
+    50% {
+      transform: translateY(0);
+    }
+
+    75% {
+        transform: translateY(-15%);
+    }
+
+    100% {
+        transform: translateY(-30%);
+    }
+    
+}
+
